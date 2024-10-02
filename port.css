@@ -683,6 +683,12 @@ width: 600px;
     .navbar .menu li a{
       font-size: 15px;
     }
+       .projects .project-container{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      
+      
+    }
   }
    
 
