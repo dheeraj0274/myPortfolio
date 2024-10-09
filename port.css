@@ -451,9 +451,18 @@ textarea , #MessageP{
   border: none;
   transition: 300ms;
   border-radius: 7px;
+  position:relative;
+  isolation:isolate;
 }
 .btn:hover{
-  background-color: rgb(99, 219, 217);
+  content: '';
+  position: absolute;
+  z-index: -1;
+  background: rgb(28, 173, 65);
+  inset: 0;
+  scale: 0 1;
+  transition:  scale 450ms;
+  border-radius: 5px;
 }   
 
 
