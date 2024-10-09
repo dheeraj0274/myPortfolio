@@ -454,7 +454,7 @@ textarea , #MessageP{
   position:relative;
   isolation:isolate;
 }
-.btn:hover{
+.btn::after{
   content: '';
   position: absolute;
   z-index: -1;
@@ -465,6 +465,10 @@ textarea , #MessageP{
   border-radius: 5px;
 }   
 
+.btn:hover::after , .btn:focus-visible::after{
+  scale:1 1;
+
+}
 
 .contact-info{
   
