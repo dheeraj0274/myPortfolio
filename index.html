@@ -11,6 +11,16 @@
   </head>
   <body>
     <nav class="navbar">
+      <div class="theme-toggle">
+        <button class="theme-toggle-button" aria-label="Toggle theme">
+          <span class="theme-icon sun-icon">☀️</span>
+            <span class="theme-icon moon-icon">🌙</span>
+        </button>
+        <div class="dropdown-content" id="themeDropdown">
+          <button onclick="setTheme('light')">☀️ Light Mode</button>
+          <button onclick="setTheme('dark')">🌙 Dark Mode</button>
+        </div>
+      </div>
         
 
 
