@@ -233,7 +233,7 @@ label #btn , label #cancel{
     
     width: 100%;
     height: 800px;
-    background: linear-gradient(100deg, rgb(244, 244, 242),#bdc3c7 ,#2c3e50,rgb(87, 91, 91),rgb(223, 223, 228));
+    background:linear-gradient(100deg, rgb(110, 44, 176),#65bfcf ,#4d989b,rgb(87, 91, 91),rgb(112, 250, 119));
     background-size: 400% 400%;
     animation: gradBG 15s ease infinite;
   
