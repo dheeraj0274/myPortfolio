@@ -32,5 +32,30 @@ liBtn.forEach(atag => {
     Checkbox.checked = false;
   });
 });
+const themeToggle =document.querySelector('.theme-toggle-button');
+const dropdown = document.getElementById('themeDropdown');
+
+
+function setTheme(theme){
+  document.body.classList.toggle('dark' , theme==='dark');
+ 
+  localStorage.setItem('theme' , theme);
+  dropdown.classList.remove('show');
+}
+
+const savedTheme = localStorage.getItem('theme') || 'light';
+setTheme(savedTheme);
+
+themeToggle.addEventListener('click' , (event)=>{
+  event.stopPropagation();
+  dropdown.classList.toggle('show');
+})
+document.addEventListener('click', (event)=>{
+  if(!event.target.matches('.theme-toggle-button')){
+    dropdown.classList.remove('show');
+  }
+});
+
+
 
 
