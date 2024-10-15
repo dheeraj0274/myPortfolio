@@ -847,6 +847,7 @@ width: 600px;
       display: flex;
       flex-direction: column;
     }
+      
   .form-title{
   
   
@@ -931,6 +932,16 @@ width: 600px;
     .updated strong{
       font-size: 12px;
     }
+      .navbar .theme-toggle-button{
+    width: 30px  ;
+    height: 30px ;
+    
+  }
+  .navbar .theme-toggle-button .theme-icon{
+    font-size: 15px;
+  
+    
+  }
    
   
   }
@@ -1166,6 +1177,7 @@ width: 600px;
  
  body.dark .home{
   background-color: #1a1a1a;
+  transition: background-color 0.3s;
   
  }
  body.dark .home .home-content .text1{
